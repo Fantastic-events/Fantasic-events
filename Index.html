@@ -1,0 +1,165 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fantastic Events</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      background: linear-gradient(to right, #fceabb, #f8b500);
+      color: #333;
+      animation: fadeIn 2s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    header {
+      background: #4a148c;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      animation: slideDown 1.2s ease-out;
+    }
+    @keyframes slideDown {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    header h1 {
+      font-size: 2.8em;
+    }
+    nav {
+      background: #7b1fa2;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      text-decoration: underline;
+      color: #ffeb3b;
+    }
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .section-colored {
+      background: #fff3e0;
+    }
+    .cta {
+      background: #ff6f00;
+      color: white;
+      padding: 15px 30px;
+      display: inline-block;
+      margin-top: 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 1.2em;
+      transition: background 0.3s ease;
+    }
+    .cta:hover {
+      background: #e65100;
+    }
+    footer {
+      background: #4a148c;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+    select, input, textarea, button {
+      font-size: 1.1em;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      width: 80%;
+      max-width: 400px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+    button {
+      background-color: #7b1fa2;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background-color: #4a148c;
+    }
+  </style>
+</head>
+<body>  <header>
+    <h1>Fantastic Events</h1>
+    <p>Celebrate Every Moment – Big or Small!</p>
+  </header>  <nav>
+    <a href="#home">Home</a>
+    <a href="#locations">Locations</a>
+    <a href="#events">Event Types</a>
+    <a href="#contact">Contact</a>
+  </nav>  <section id="home">
+    <h2>Welcome to Fantastic Events</h2>
+    <p>Affordable and unforgettable event planning just for you!</p>
+    <a href="#contact" class="cta">Book Now</a>
+  </section>  <section id="locations" class="section-colored">
+    <h2>Choose Your Location</h2>
+    <select>
+      <option value="brakpan">Brakpan</option>
+      <option value="springs">Springs</option>
+      <option value="benoni">Benoni</option>
+      <option value="nigel">Nigel</option>
+    </select>
+  </section>  <section id="events">
+    <h2>Event Options</h2>
+    <select>
+      <option value="birthday">Birthday</option>
+      <option value="wedding">Wedding</option>
+      <option value="party">Party</option>
+      <option value="work">Work Event</option>
+    </select>
+  </section>  <section id="contact" class="section-colored">
+    <h2>Contact & Booking</h2>
+    <p>Fill out the form below to book your event with us!</p>
+    <form action="https://formsubmit.co/Fantastic.events2plan@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="New Booking Request!">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="https://fantastic-events.thankyou.page"><input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <input type="tel" name="phone" placeholder="Your Phone Number" required>
+  <select name="location" required>
+    <option value="">Select Location</option>
+    <option value="brakpan">Brakpan</option>
+    <option value="springs">Springs</option>
+    <option value="benoni">Benoni</option>
+    <option value="nigel">Nigel</option>
+  </select>
+  <select name="event_type" required>
+    <option value="">Select Event Type</option>
+    <option value="birthday">Birthday</option>
+    <option value="wedding">Wedding</option>
+    <option value="party">Party</option>
+    <option value="work">Work Event</option>
+  </select>
+  <textarea name="message" rows="4" placeholder="Additional Details..."></textarea>
+  <button type="submit">Submit Booking</button>
+</form>
+<p>Or email us directly: fantasticevents@example.com</p>
+<p>Phone: 012 345 6789</p>
+
+  </section>  <footer>
+    &copy; 2025 Fantastic Events. All rights reserved.
+  </footer></body>
+</html>
